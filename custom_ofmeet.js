@@ -1365,7 +1365,7 @@ var ofmeet = (function(of)
                         const room = node.getAttribute("data-roomid");
                         const label = node.getAttribute("data-label");
                         const jid = node.getAttribute("data-jid");
-                        const url = rootUrl + '/index.html?room=' + room;
+                        const url = rootUrl + '/?room=' + room;
 
                         json = {action: 'breakout', id: id, room: room, label: label, jid: jid, url: url, return: location.href, webinar: webinar};
                         broadcastBreakout("chat", jid, xmpp, json);
